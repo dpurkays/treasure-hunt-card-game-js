@@ -1,0 +1,83 @@
+body {
+    font-family: 'Caveat', cursive;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    background-color: #66666e;
+    height: 2.1em;
+    width: 2.1em;
+}
+
+td:hover {
+    background-color: #7a7d7d;
+
+}
+
+#buttons {
+    padding-top: 10px;
+    padding-left: 200px;
+}
+
+div {
+    display: inline-block;
+    padding: 0;
+}
+
+#game {
+    padding-left: 50px;
+    float: left;
+}
+
+#info {
+    font-size: 30px;
+    width: 10em;
+    padding-left: 100px;
+}
+
+.treasure {
+    background-color: #4CAF50;
+}
+
+.noTreasure {
+    background-color: #D32F2F;
+}
+
+h1 {
+    padding-left: 150px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+h2, #hiScore {
+    display: inline-block;
+}
+
+#hiScore {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    padding-left: 70px;
+}
