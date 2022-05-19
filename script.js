@@ -2,6 +2,9 @@ const NUM_ROWS = 20;
 const NUM_COLS = 20;
 const MAX_NUM_TREASURES = 40;
 const WIN_GAME = 20;
+const TREASURE = 'treasure';
+const NOTREASURE = 'noTreasure';
+const NOTCLICKED = 'notClicked';
 
 var table = document.getElementById('gameBoard');
 var numTreasures = 0;
@@ -28,6 +31,12 @@ function makeGameBoardArray() {
     return arr;
 }
 
+function colorCell(attrVal, cell) {
+    var attr = document.createAttribute('class');
+    attr.value = attrVal;
+    cell.setAttributeNode(attr);
+}
+
 function setupGameBoard() {
     var gameBoardArr = makeGameBoardArray();
     drawGameBoard(gameBoardArr); 
@@ -46,9 +55,11 @@ function setupGameBoard() {
         let row = table.rows[i]
         
         for (let j = 0; j < row.cells.length; j++) {
-          let cell = row.cells[j]
+            let cell = row.cells[j]
+
+            colorCell(NOTCLICKED, cell);
             
-          cell.addEventListener("click", function () {
+            cell.addEventListener("click", function () {
                 cellClickHandler(i, j, gameBoardArr, cell)
             });
         }
@@ -104,7 +115,7 @@ function cellClickHandler(row, col, gameBoardArr, cell) {
     var hasTreasure = setTreasure();
     var newCell = new Cell(row, col, hasTreasure);
     gameBoardArr[row][col] = newCell; 
-
+    
     showCell(hasTreasure, cell);
     
     checkWinStatus();
@@ -145,13 +156,11 @@ function showSolHandler(gameBoardArr) {
 function showCell(hasTreasure, cell) {
     var attr = document.createAttribute('class');
     if (hasTreasure) {
-        attr.value = 'treasure';
-        cell.setAttributeNode(attr);
+        colorCell(TREASURE, cell);
         numFoundTreasures++;
        
     } else if (!hasTreasure) {
-        attr.value = 'noTreasure';
-        cell.setAttributeNode(attr);   
+        colorCell(NOTREASURE, cell);
     }
 }
 
