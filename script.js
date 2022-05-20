@@ -2,9 +2,12 @@ const NUM_ROWS = 20;
 const NUM_COLS = 20;
 const MAX_NUM_TREASURES = 40;
 const WIN_GAME = 20;
+<<<<<<< HEAD
+=======
 const TREASURE = 'treasure';
 const NOTREASURE = 'noTreasure';
 const NOTCLICKED = 'notClicked';
+>>>>>>> origin
 
 var table = document.getElementById('gameBoard');
 var numTreasures = 0;
@@ -31,12 +34,15 @@ function makeGameBoardArray() {
     return arr;
 }
 
+<<<<<<< HEAD
+=======
 function colorCell(attrVal, cell) {
     var attr = document.createAttribute('class');
     attr.value = attrVal;
     cell.setAttributeNode(attr);
 }
 
+>>>>>>> origin
 function setupGameBoard() {
     var gameBoardArr = makeGameBoardArray();
     drawGameBoard(gameBoardArr); 
@@ -55,11 +61,17 @@ function setupGameBoard() {
         let row = table.rows[i]
         
         for (let j = 0; j < row.cells.length; j++) {
+<<<<<<< HEAD
+          let cell = row.cells[j]
+            
+          cell.addEventListener("click", function () {
+=======
             let cell = row.cells[j]
 
             colorCell(NOTCLICKED, cell);
             
             cell.addEventListener("click", function () {
+>>>>>>> origin
                 cellClickHandler(i, j, gameBoardArr, cell)
             });
         }
@@ -115,7 +127,11 @@ function cellClickHandler(row, col, gameBoardArr, cell) {
     var hasTreasure = setTreasure();
     var newCell = new Cell(row, col, hasTreasure);
     gameBoardArr[row][col] = newCell; 
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> origin
     showCell(hasTreasure, cell);
     
     checkWinStatus();
@@ -156,11 +172,21 @@ function showSolHandler(gameBoardArr) {
 function showCell(hasTreasure, cell) {
     var attr = document.createAttribute('class');
     if (hasTreasure) {
+<<<<<<< HEAD
+        attr.value = 'treasure';
+        cell.setAttributeNode(attr);
+        numFoundTreasures++;
+       
+    } else if (!hasTreasure) {
+        attr.value = 'noTreasure';
+        cell.setAttributeNode(attr);   
+=======
         colorCell(TREASURE, cell);
         numFoundTreasures++;
        
     } else if (!hasTreasure) {
         colorCell(NOTREASURE, cell);
+>>>>>>> origin
     }
 }
 

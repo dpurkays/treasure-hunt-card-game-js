@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+body {
+    font-family: 'Caveat', cursive;
+=======
 
 body {
     font-family: 'Caveat', cursive;
     background-color: #1B1209;
     color: #8C7561;
+>>>>>>> origin
 }
 
 table {
@@ -17,7 +22,11 @@ td {
 
 td:hover {
     background-color: #7a7d7d;
+<<<<<<< HEAD
+
+=======
     cursor: pointer;
+>>>>>>> origin
 }
 
 #buttons {
@@ -27,6 +36,20 @@ td:hover {
 
 div {
     display: inline-block;
+<<<<<<< HEAD
+    padding: 0;
+}
+
+#game {
+    padding-left: 50px;
+    float: left;
+}
+
+#info {
+    font-size: 30px;
+    width: 10em;
+    padding-left: 100px;
+=======
 }
 
 #game {
@@ -44,6 +67,7 @@ div {
 .score {
     float: right;
     margin: 0 200px 0 10px;
+>>>>>>> origin
 }
 
 .treasure {
@@ -62,6 +86,12 @@ div {
     /* background-color: #D32F2F; */
 }
 
+<<<<<<< HEAD
+h1 {
+    padding-left: 150px;
+    font-size: 60px;
+    margin-bottom: 10px;
+=======
 .notClicked {
     background-color: #61584A;
 }
@@ -80,21 +110,34 @@ h1 {
     font-size: 60px;
     /* background-color: #1B1209; */
     margin: 0 0 0 0;
+>>>>>>> origin
 }
 
 h2 {
     font-size: 38px;
+<<<<<<< HEAD
+    margin-bottom: 0;
+}
+
+h2, #hiScore {
+    display: inline-block;
+}
+=======
     /* margin-bottom: 0; */
 }
 
 /* h2, #hiScore {
     display: inline-block;
 } */
+>>>>>>> origin
 
 #hiScore {
     font-size: 35px;
     font-weight: bold;
+<<<<<<< HEAD
+=======
     text-align: center;
+>>>>>>> origin
 }
 
 button {
@@ -107,7 +150,11 @@ button {
     font-size: 16px;
 }
 
+<<<<<<< HEAD
+img {
+=======
 .image {
+>>>>>>> origin
     height: 100px;
     width: 100px;
     padding-left: 70px;
