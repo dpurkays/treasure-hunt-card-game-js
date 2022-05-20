@@ -10,4 +10,6 @@ https://dpurkays.github.io/treasure-hunt-card-game-js/
 
 - treasure-chest: <a href="https://www.flaticon.com/free-icons/chest" title="chest icons">Chest icons created by Smashicons - Flaticon</a>
 
+- gem: <a href="https://www.flaticon.com/free-icons/diamond" title="diamond icons">Diamond icons created by Freepik - Flaticon</a>
+- not-treasure: <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a>
 

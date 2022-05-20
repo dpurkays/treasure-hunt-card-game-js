@@ -47,11 +47,19 @@ div {
 }
 
 .treasure {
+    background-image: url(images/gem.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #4CAF50;
+    /* background-color: #4CAF50; */
 }
 
 .noTreasure {
-    background-color: #D32F2F;
+    background-image: url(images/no-treasure.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1B1209;
+    /* background-color: #D32F2F; */
 }
 
 .notClicked {

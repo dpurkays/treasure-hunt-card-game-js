@@ -74,7 +74,7 @@ function getRandomBoolean() {
 }
 
 function setTreasure() {
-    isTreasure = getRandomBoolean();
+    var isTreasure = getRandomBoolean();
     if (isTreasure && numTreasures < MAX_NUM_TREASURES) {
         numTreasures++;
     } else if (numTreasures >= MAX_NUM_TREASURES) {
@@ -191,7 +191,7 @@ function setupPage() {
     howTo.appendChild(p);
     p.append("Ahoy mate! ");
     howTo.append("There are 40 treasures hidden in this map. Click on a tiles to reveal the treasures. ");
-    howTo.append("If the tile turns green, you found a treasure! If the tile turns red, try again!");
+    howTo.append("If the tile turns green with a gem, you found a treasure! If the tile has an 'x', try again!");
     howTo.appendChild(br);
     howTo.append("Find 20 treasures to win! ARRRR!");
 
